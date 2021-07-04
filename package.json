@@ -1,0 +1,12 @@
+{
+	"name": "prisma-npm-d-repro",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"bootstrap": "npx pnpm install && npx prisma generate",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Sam McCord",
+	"license": "ISC"
+}

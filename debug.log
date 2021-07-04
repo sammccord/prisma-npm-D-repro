@@ -1,0 +1,74 @@
+0 verbose cli [
+0 verbose cli   '/Users/sammccord/.nvm/versions/node/v15.14.0/bin/node',
+0 verbose cli   '/Users/sammccord/.nvm/versions/node/v15.14.0/bin/npm',
+0 verbose cli   'install',
+0 verbose cli   '@prisma/client@2.26.0'
+0 verbose cli ]
+1 info using npm@7.19.1
+2 info using node@v15.14.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/Users/sammccord/.nvm/versions/node/v15.14.0/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/Users/sammccord/work/prisma-npm-D-repro/packages/prisma/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:/Users/sammccord/.npmrc Completed in 3ms
+12 timing config:load:user Completed in 3ms
+13 timing config:load:file:/Users/sammccord/.nvm/versions/node/v15.14.0/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 13ms
+19 timing npm:load:configload Completed in 13ms
+20 timing npm:load:setTitle Completed in 16ms
+21 timing npm:load:setupLog Completed in 1ms
+22 timing npm:load:cleanupLog Completed in 2ms
+23 timing npm:load:configScope Completed in 0ms
+24 timing npm:load:projectScope Completed in 0ms
+25 timing npm:load Completed in 32ms
+26 timing config:load:flatten Completed in 2ms
+27 timing arborist:ctor Completed in 1ms
+28 timing idealTree:init Completed in 18ms
+29 timing idealTree:userRequests Completed in 1ms
+30 silly idealTree buildDeps
+31 silly fetch manifest @prisma/client@2.26.0
+32 verbose shrinkwrap failed to load node_modules/.package-lock.json missing from node_modules: ../../node_modules/.pnpm/prisma@2.26.0/node_modules/prisma
+33 http fetch GET 200 https://registry.npmjs.org/@prisma%2fclient 35ms (cache hit)
+34 silly fetch manifest prisma@^2.26.0
+35 http fetch GET 200 https://registry.npmjs.org/prisma 29ms (cache hit)
+36 silly placeDep ROOT @prisma/client@2.26.0 REPLACE for: prisma@1.0.0 want: 2.26.0
+37 silly fetch manifest @prisma/engines-version@2.26.0-23.9b816b3aa13cc270074f172f30d6eda8a8ce867d
+38 http fetch GET 200 https://registry.npmjs.org/@prisma%2fengines-version 435ms (cache miss)
+39 timing idealTree:#root Completed in 583ms
+40 silly placeDep ROOT @prisma/engines-version@2.26.0-23.9b816b3aa13cc270074f172f30d6eda8a8ce867d OK for: @prisma/client@2.26.0 want: 2.26.0-23.9b816b3aa13cc270074f172f30d6eda8a8ce867d
+41 timing idealTree:node_modules/@prisma/client Completed in 1ms
+42 timing idealTree:node_modules/@prisma/engines-version Completed in 0ms
+43 timing idealTree:buildDeps Completed in 586ms
+44 timing idealTree:fixDepFlags Completed in 0ms
+45 timing idealTree Completed in 605ms
+46 timing reify:loadTrees Completed in 607ms
+47 timing reify:diffTrees Completed in 1ms
+48 silly reify mark retired [
+48 silly reify   '/Users/sammccord/work/prisma-npm-D-repro/packages/prisma/node_modules/@prisma/client'
+48 silly reify ]
+49 silly reify moves {
+49 silly reify   '/Users/sammccord/work/prisma-npm-D-repro/packages/prisma/node_modules/@prisma/client': '/Users/sammccord/work/prisma-npm-D-repro/packages/prisma/node_modules/@prisma/.client-sbyGw3Pu'
+49 silly reify }
+50 timing reify:rollback:retireShallow Completed in 0ms
+51 timing command:install Completed in 625ms
+52 verbose stack Error: ENOTDIR: not a directory, rename '/Users/sammccord/work/prisma-npm-D-repro/packages/prisma/node_modules/@prisma/client' -> '/Users/sammccord/work/prisma-npm-D-repro/packages/prisma/node_modules/@prisma/.client-sbyGw3Pu'
+53 verbose cwd /Users/sammccord/work/prisma-npm-D-repro/packages/prisma/prisma
+54 verbose Darwin 20.5.0
+55 verbose argv "/Users/sammccord/.nvm/versions/node/v15.14.0/bin/node" "/Users/sammccord/.nvm/versions/node/v15.14.0/bin/npm" "install" "@prisma/client@2.26.0"
+56 verbose node v15.14.0
+57 verbose npm  v7.19.1
+58 error code ENOTDIR
+59 error syscall rename
+60 error path /Users/sammccord/work/prisma-npm-D-repro/packages/prisma/node_modules/@prisma/client
+61 error dest /Users/sammccord/work/prisma-npm-D-repro/packages/prisma/node_modules/@prisma/.client-sbyGw3Pu
+62 error errno -20
+63 error ENOTDIR: not a directory, rename '/Users/sammccord/work/prisma-npm-D-repro/packages/prisma/node_modules/@prisma/client' -> '/Users/sammccord/work/prisma-npm-D-repro/packages/prisma/node_modules/@prisma/.client-sbyGw3Pu'
+64 verbose exit -20
